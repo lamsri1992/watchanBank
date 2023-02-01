@@ -26,7 +26,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ (request()->is('personal/aisave*')) ? '' : 'collapsed' }}"
-                    href="{{ url('/') }}">
+                    href="#">
                     <i class="bi bi-piggy-bank"></i>
                     <span>ระบบช่วยออมเงิน </span>
                 </a>

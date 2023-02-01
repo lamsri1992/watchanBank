@@ -1,7 +1,7 @@
 <!-- ======= Sidebar ======= -->
 <aside id="sidebar" class="sidebar">
     <ul class="sidebar-nav" id="sidebar-nav">
-        <li class="nav-heading">เมนูผู้ดูแลระบบ</li>
+        <li class="nav-heading">เมนูผู้ดูแลระบบ :: ท่านได้รับสิทธิ์ผู้ดูแลระบบ</li>
         <li class="nav-item">
             <a class="nav-link {{ (request()->is('home')) ? '' : 'collapsed' }}"
                 href="{{ route('home') }}">
@@ -78,7 +78,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ (request()->is('personal/aisave*')) ? '' : 'collapsed' }}"
-                    href="{{ url('/') }}">
+                    href="#">
                     <i class="bi bi-piggy-bank"></i>
                     <span>ระบบช่วยออมเงิน </span>
                 </a>
