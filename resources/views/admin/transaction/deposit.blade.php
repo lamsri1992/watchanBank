@@ -135,7 +135,7 @@
                                         <td>{{ $res->name }}</td>
                                         <td>{{ $res->item_name }}</td>
                                         <td class="text-center">{{ $res->tran_amount }}</td>
-                                        <td class="text-center">{{ DateTimeThai($res->created_at) }}</td>
+                                        <td class="text-center">{{ DateTimeThai($res->tran_created_at) }}</td>
                                     </tr>
                                     @endforeach
                                 </tbody>

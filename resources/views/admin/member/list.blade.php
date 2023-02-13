@@ -54,7 +54,7 @@
                                     <td>{{ $res->name }}</td>
                                     <td>{{ $res->dept_name }}</td>
                                     <td class="text-center">{{ $res->tel }}</td>
-                                    <td class="text-center">{{ DateTimeThai($res->created_at) }}</td>
+                                    <td class="text-center">{{ DateTimeThai($res->mem_created_at) }}</td>
                                     <td class="text-center">
                                         <a href="{{ route('member.show',$res->id) }}" class="badge bg-primary">
                                             <i class="fas fa-search"></i> รายละเอียด

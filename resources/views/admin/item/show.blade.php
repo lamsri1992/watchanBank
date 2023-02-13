@@ -102,9 +102,9 @@
                                     <tbody>
                                         @foreach ($price as $res)
                                         <tr>
-                                            <td>{{ $res->prc_id }}</td>
+                                            <td>{{ $res->prc_id }}</td> 
                                             <td>{{ $res->prc_price." ฿" }}</td>
-                                            <td>{{ DateTimeThai($res->created_at) }}</td>
+                                            <td>{{ DateTimeThai($res->prc_created_at) }}</td>
                                             <td>
                                                 @if ($res->prc_status == 1)
                                                     <small class="text-muted">
