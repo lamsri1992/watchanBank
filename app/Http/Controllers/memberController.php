@@ -35,6 +35,7 @@ class memberController extends Controller
                 "department" => $request->dept,
                 "gender" => $request->gender,
                 "cid" => $request->cid,
+                "username" => $request->cid,
                 "address" => $request->address,
                 "tel" => $request->tel,
                 "email" => $request->email,
