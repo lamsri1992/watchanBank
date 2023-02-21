@@ -77,7 +77,7 @@
                                                 <span class="input-group-text" id="inputGroupPrepend">
                                                     <i class="fa fa-address-card"></i>
                                                 </span>
-                                                <input type="text" name="username" class="form-control" id="yourUsername" required placeholder="ระบุเลขที่บัตรประจำตัวประชาชน">
+                                                <input type="text" name="username" class="form-control" id="yourUsername" required placeholder="ระบุชื่อผู้ใช้งาน">
                                                 <div class="invalid-feedback">กรณาระบุข้อมูลนี้</div>
                                             </div>
                                         </div>

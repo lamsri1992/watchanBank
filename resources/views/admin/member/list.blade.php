@@ -37,6 +37,7 @@
                                 <tr>
                                     <th class="text-center">ID</th>
                                     <th class="text-center" width="5%">รูปภาพ</th>
+                                    <th class="text-center">Username</th>
                                     <th>ชื่อสมาชิก</th>
                                     <th>ฝ่าย</th>
                                     <th class="text-center">เบอร์โทร</th>
@@ -48,9 +49,10 @@
                                 @foreach ($list as $res)
                                 <tr>
                                     <td class="text-center">{{ $res->id }}</td>
-                                    <td>
+                                    <td class="text-center">
                                         <img src="{{ asset('img/member/'.$res->img) }}" height="60" width="50">
                                     </td>
+                                    <td class="text-center">{{ $res->username }}</td>
                                     <td>{{ $res->name }}</td>
                                     <td>{{ $res->dept_name }}</td>
                                     <td class="text-center">{{ $res->tel }}</td>
@@ -83,6 +85,10 @@
                     </h5>
                 </div>
                 <div class="modal-body">
+                    <div class="form-group" style="margin-bottom: 0.5rem;">
+                        <label for="">Username</label>
+                        <input type="text" name="username" class="form-control" placeholder="ระบุชื่อสมาชิก">
+                    </div>
                     <div class="form-group" style="margin-bottom: 0.5rem;">
                         <label for="">ชื่อสมาชิก</label>
                         <input type="text" name="name" class="form-control" placeholder="ระบุชื่อสมาชิก">

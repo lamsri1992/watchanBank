@@ -31,11 +31,11 @@ class memberController extends Controller
 
         DB::table('member')->insert(
             [
+                "username" => $request->username,
                 "name" => $request->name,
                 "department" => $request->dept,
                 "gender" => $request->gender,
                 "cid" => $request->cid,
-                "username" => $request->cid,
                 "address" => $request->address,
                 "tel" => $request->tel,
                 "email" => $request->email,
@@ -83,6 +83,7 @@ class memberController extends Controller
             $file->move('img/member', $fileName);
 
             DB::table('member')->where('id',$id)->update([
+                "username" => $request->username,
                 "name" => $request->name,
                 "department" => $request->dept,
                 "gender" => $request->gender,
@@ -95,6 +96,7 @@ class memberController extends Controller
             ]);
         }else{
             DB::table('member')->where('id',$id)->update([
+                "username" => $request->username,
                 "name" => $request->name,
                 "department" => $request->dept,
                 "gender" => $request->gender,
