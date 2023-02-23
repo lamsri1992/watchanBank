@@ -49,6 +49,10 @@
                                             <div class="modal-content">
                                                 <div class="modal-body">
                                                     <div class="form-group" style="margin-bottom: 0.5rem;">
+                                                        <label for="">Username</label>
+                                                        <input type="text" name="username" class="form-control" placeholder="ระบุชื่อสมาชิก" value="{{ $list->username }}">
+                                                    </div>
+                                                    <div class="form-group" style="margin-bottom: 0.5rem;">
                                                         <label for="">ชื่อสมาชิก</label>
                                                         <input type="text" name="name" class="form-control" placeholder="ระบุชื่อสมาชิก" value="{{ $list->name }}">
                                                     </div>

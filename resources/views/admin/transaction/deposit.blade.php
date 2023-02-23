@@ -66,7 +66,7 @@
                                 <div class="row mb-3">
                                     <label for="" class="col-sm-2 col-form-label">จำนวน/กิโลกรัม</label>
                                     <div class="col-sm-10">
-                                        <input type="number" name="amount" class="form-control"
+                                        <input type="number" id="amount" name="amount" class="form-control"
                                             placeholder="ระบุเฉพาะตัวเลข และทศนิยม 2 ตำแหน่ง">
                                     </div>
                                 </div>
@@ -92,9 +92,11 @@
                                 </div>
                                 <div class="text-center">
                                     <button type="button" class="btn btn-sm btn-success"
-                                        onclick="Swal.fire({
+                                        onclick="
+                                        // var total = 'ยอดนำฝากรวม : ' + $('#amount').val() + ' ฿';
+                                        Swal.fire({
                                             title: 'บันทึกการนำฝาก ?',
-                                            text: 'กรุณาตรวจสอบข้อมูลให้ถูกต้องก่อนกดบันทึก',
+                                            // text: total,
                                             showCancelButton: true,
                                             confirmButtonText: `บันทึก`,
                                             cancelButtonText: `ยกเลิก`,

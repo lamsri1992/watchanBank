@@ -35,6 +35,7 @@ class userController extends Controller
             $file->move('img/member', $fileName);
 
             DB::table('member')->where('id',$id)->update([
+                "username" => $request->username,
                 "name" => $request->name,
                 "department" => $request->dept,
                 "gender" => $request->gender,
@@ -47,6 +48,7 @@ class userController extends Controller
             ]);
         }else{
             DB::table('member')->where('id',$id)->update([
+                "username" => $request->username,
                 "name" => $request->name,
                 "department" => $request->dept,
                 "gender" => $request->gender,
