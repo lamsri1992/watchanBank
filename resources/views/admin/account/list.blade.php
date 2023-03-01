@@ -48,10 +48,12 @@
                                     <td class="text-center fw-bold">{{ number_format($res->acc_amount,2)." ฿" }}</td>
                                     <td class="text-center">{{ DateThai($res->acc_open) }}</td>
                                     <td class="text-center">
-                                        <span class="{{ 'text-'.$res->ast_color }}">
-                                            {!! $res->ast_icon !!}
-                                        </span>
-                                        {{ $res->ast_name }}
+                                        <small>
+                                            <span class="{{ 'text-'.$res->ast_color }}">
+                                                {!! $res->ast_icon !!}
+                                            </span>
+                                            {{ $res->ast_name }}
+                                        </small>
                                     </td>
                                     <td class="text-center">
                                         <small class="text-muted">
