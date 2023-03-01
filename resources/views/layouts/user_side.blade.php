@@ -24,11 +24,18 @@
                     <span>Statement บัญชี</span>
                 </a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a class="nav-link {{ (request()->is('personal/aisave*')) ? '' : 'collapsed' }}"
                     href="#">
                     <i class="bi bi-piggy-bank"></i>
                     <span>ระบบช่วยออมเงิน </span>
+                </a>
+            </li> --}}
+            <li class="nav-item">
+                <a class="nav-link {{ (request()->is('personal/aisave*')) ? '' : 'collapsed' }}"
+                    href="https://www1.reg.cmu.ac.th/notification/document/GET-LINE-TOKEN.pdf" target="_blank">
+                    <i class="bi bi-key"></i>
+                    <span>การสร้าง Line Token</span>
                 </a>
             </li>
         </li><!-- End Nav -->
