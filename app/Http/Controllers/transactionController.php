@@ -37,6 +37,7 @@ class transactionController extends Controller
         $item = DB::table('item')
                 ->join('item_price','item_price.prc_item_id','item.item_id')
                 ->where('item_id',$request->item)
+                ->where('prc_status',1)
                 ->first();
         $price = $item->prc_price * $request->amount;
         $amount = $price + $acc->acc_amount;

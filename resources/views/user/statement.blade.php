@@ -28,7 +28,7 @@
                                 @foreach ($history as $res)
                                 <tr>
                                     <td class="text-center">{{ $res->tran_code }}</td>
-                                    <td class="text-center">{{ DateTimeThai($res->created_at) }}</td>
+                                    <td class="text-center">{{ DateTimeThai($res->tran_created_at) }}</td>
                                     <td class="text-center">
                                         <span class="{{ $res->ttype_color }} fw-bold">
                                             {!! $res->ttype_icon !!}
